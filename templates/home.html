@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="type/css" href="{{url_for('static', filename='css/styles.css')}}" </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="brandname">
+                    ML App
+                </div>
+                <h2>Salary Prediction Using Machine Learning</h2>
+            </div>
+        </header>
+
+        <div class="ml-container">
+            <form action="{{url_for('predict')}}" method='POST'>
+			<h2><font color="Red">Select Profession and Experiance</h2><br>
+			<select id="Job" name="Job">
+			<option value="" disabled selected>Profession</option>
+			<option value="0">Engineering</option>
+			<option value="1">Medicine</option>
+			<option value="2">Finance</option>
+			<option value="3">Law</option>
+			<option value="4">Business</option>
+			<option value="5">Teaching</option>
+			</select>
+                <p>Enter Your Experiance Here</p>
+                <label>Experiance<input type="text" name="Experiance" rows="4" cols="50"></input></label>
+                <br/>
+                <input type='submit' class="btn-info" value="predict">
+            </form>
+        </div>
+
+
+    </body>
+
+</html>

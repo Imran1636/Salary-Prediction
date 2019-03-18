@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="type/css" href="{{url_for('static', filename='css/style.css')}}" </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="brandname">
+                    ML App
+                </div>
+                <h2>Spam Detection Using Machine Learning</h2>
+            </div>
+        </header>
+
+        <p style="color:blue;font-size:20;text-align:center;"></p>
+        <b>Results For Comment</b>
+        <div class="results">
+ 
+            <h2 style="color:red">{{ prediction }}</h2>
+        </div>
+
+
+    </body>
+
+</html>
